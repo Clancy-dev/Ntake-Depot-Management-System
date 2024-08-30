@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ntake-Management-System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="section-one">
+
+       <div class="table-1">
+        <div class="logo">
+            <img src="logo.png" alt="Ntake Bakery Management System">
+        </div>
+       </div>
+       <div class="table-2">
+        <p>Ntake Depot Management System</p>
+       </div>
+       <div class="table-3">
+        <p>Location:</p>
+        <div class="locations">
+            <a href="">Nakawa</a>
+            <a href="">Kireka</a>
+            <a href="">Nansana</a>
+        </div>
+       
+
+       </div>
+       <div class="table-4">
+        <h2>Bread</h2>
+       </div>
+
+       <div class="main-category-container">
+        <div class="after-bread-title">
+            <div class="table-5">
+                <h3>Item</h3>
+                <h3 class="qty-begin">Qty at Start</h3>
+                <h3 class="qty-end">Qty at End</h3>
+                <h3>Qty Sold</h3>
+                <h3>Sales</h3>
+                <h3>Profit</h3>
+                <h3>Expiry</h3>
+         
+         
+         
+                </div>
+
+                <div class="table">
+                 <h3>Classic Bread</h3>
+                 <h3>
+                     <input type="number" id="input1" oninput="calculateDifference()">
+                 </h3>
+                 <h3>
+                     <input type="number" id="input2" oninput="calculateDifference()">
+                 </h3>
+                 <h3 id="resultDiv">
+                    <span id="result">0</span>
+                 </h3>
+                 <h3 id="priceDiv">
+                    <span id="price" class="price-1">0</span>
+                 </h3>
+                 <h3 id="profitDiv">
+                    <span id="profit">0</span>
+                 </h3>
+                 <h3>
+                  <div class="blue-light"></div>           
+                 </h3>
+         
+                </div>
+                <div class="table">
+                 <h3>Classic Bread</h3>
+                 <h3>
+                     <input type="number" id="input1" oninput="calculateDifference()">
+                 </h3>
+                 <h3>
+                     <input type="number" id="input2" oninput="calculateDifference()">
+                 </h3>
+                 <h3 id="resultDiv">
+                    <span id="result">0</span>
+                 </h3>
+                 <h3 id="priceDiv">
+                    <span id="price" class="price-1">0</span>
+                 </h3>
+                 <h3 id="profitDiv">
+                    <span id="profit">0</span>
+                 </h3>
+                 <h3>
+                  <div class="blue-light"></div>           
+                 </h3>
+         
+                </div>
+                <div class="table">
+                    <h3>Bus Bread</h3>
+                    <h3>
+                        <input type="number" id="input1" oninput="calculateDifference()">
+                    </h3>
+                    <h3>
+                        <input type="number" id="input2" oninput="calculateDifference()">
+                    </h3>
+                    <h3 id="resultDiv">
+                       <span id="result">0</span>
+                    </h3>
+                    <h3 id="priceDiv">
+                       <span id="price" class="price-2">0</span>
+                    </h3>
+                    <h3 id="profitDiv">
+                        <span id="profit">0</span>
+                     </h3>
+                    <h3>
+                     <div class="blue-light"></div>
+                    </h3>
+            
+                   </div>
+                
+                <div class="table">
+                 <h3>Katafali Bread</h3>
+                 <h3>
+                    <input type="number" id="input1" oninput="calculateDifference()">
+                </h3>
+                <h3>
+                    <input type="number" id="input2" oninput="calculateDifference()">
+                </h3>
+                <h3 id="resultDiv">
+                   <span id="result">0</span>
+                </h3>
+                <h3 id="priceDiv">
+                    <span id="price" class="price-3">0</span>
+                 </h3>
+                 <h3 id="profitDiv">
+                    <span id="profit">0</span>
+                 </h3>
+                 <h3>
+                  <div class="yellow-light"></div>
+                 </h3>
+         
+                </div>
+                <div class="table">
+                 <h3>Yellow Bread</h3>
+                 <h3>
+                    <input type="number" id="input1" oninput="calculateDifference()">
+                </h3>
+                <h3>
+                    <input type="number" id="input2" oninput="calculateDifference()">
+                </h3>
+                <h3 id="resultDiv">
+                   <span id="result">0</span>
+                </h3>
+                <h3 id="priceDiv">
+                    <span id="price" class="price-4">0</span>
+                 </h3>        
+                 <h3 id="profitDiv">
+                    <span id="profit">0</span>
+                 </h3>
+                 <h3><div class="red-light"></div></h3>
+         
+                </div>
+                <div class="table">
+                 <h3>Swirl Bread</h3>
+                 <h3>
+                    <input type="number" id="input1" oninput="calculateDifference()">
+                </h3>
+                <h3>
+                    <input type="number" id="input2" oninput="calculateDifference()">
+                </h3>
+                <h3 id="resultDiv">
+                   <span id="result">0</span>
+                </h3>
+                <h3 id="priceDiv">
+                    <span id="price" class="price-5">0</span>
+                 </h3>
+                 <h3 id="profitDiv">
+                    <span id="profit">0</span>
+                 </h3>
+                 <h3></h3>
+         
+                </div>
+                <div class="table">
+                 <h3>Cake Bread</h3>
+                 <h3>
+                    <input type="number" id="input1" oninput="calculateDifference()">
+                </h3>
+                <h3>
+                    <input type="number" id="input2" oninput="calculateDifference()">
+                </h3>
+                <h3 id="resultDiv">
+                   <span id="result">0</span>
+                </h3>
+                <h3 id="priceDiv">
+                    <span id="price" class="price-6">0</span>
+                 </h3>
+                 <h3 id="profitDiv">
+                    <span id="profit">0</span>
+                 </h3>
+                 <h3></h3>
+         
+                </div>
+                <div class="table">
+                 <h3>Milk Bread</h3>
+                 <h3>
+                    <input type="number" id="input1" oninput="calculateDifference()">
+                </h3>
+                <h3>
+                    <input type="number" id="input2" oninput="calculateDifference()">
+                </h3>
+                <h3 id="resultDiv">
+                   <span id="result">0</span>
+                </h3>
+                 <h3 id="priceDiv">
+                    <span id="price" class="price-7">0</span>
+                 </h3>
+                 <h3 id="profitDiv">
+                    <span id="profit">0</span>
+                 </h3>
+                 <h3></h3>
+         
+                </div>
+
+                <div class="table">
+                  <h3 class="empty-1"></h3>
+                  <h3 class="empty-2"></h3>
+                  <h3 class="empty-3"></h3>
+                  <h3></h3>
+                  <h3 class="total-amount-figure" id="sum">0</h3>
+                  <h3 class="total-amount-figure" id="sumTwo">0</h3>
+                  <h3></h3>
+                
+          
+                 </div>
+            
+           </div>
+
+       </div>
+
+
+        
+       
+       
+       <div class="total-amount">
+       
+
+        
+
+       </div>
+       
+
+    </div>
+    
+</body>
+</html>
