@@ -6,10 +6,10 @@
 
 .section-one {
   max-width: 100%;
-  padding: 1rem 0rem;
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+  position: relative;
 }
 .section-one .table {
   width: 100%;
@@ -17,6 +17,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top: 1px solid burlywood;
+  border-left: 1px solid burlywood;
+  border-right: 1px solid burlywood;
 }
 @media (max-width: 500px) {
   .section-one .table {
@@ -37,6 +40,7 @@
   padding: 0.5rem;
   border-radius: 7px;
   font-size: 120%;
+  border: 1.6px solid burlywood;
 }
 @media (max-width: 850px) {
   .section-one .table h3 input {
@@ -54,16 +58,19 @@
   width: 20px;
   height: 20px;
   background-color: skyblue;
+  border-radius: 50%;
 }
 .section-one .table h3 .yellow-light {
   width: 20px;
   height: 20px;
   background-color: yellow;
+  border-radius: 50%;
 }
 .section-one .table h3 .red-light {
   width: 20px;
   height: 20px;
   background-color: red;
+  border-radius: 50%;
 }
 .section-one .table .empty-1 {
   width: 10%;
@@ -77,27 +84,12 @@
 .section-one .table .total-amount-figure {
   width: 14%;
 }
-.section-one .table-1 {
-  width: 100%;
-  min-height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.section-one .logo {
-  max-width: 7rem;
-  max-height: 5.7rem;
-  background-color: blue;
-}
-.section-one .logo img {
-  width: 100%;
-  height: 100%;
-}
 .section-one .table-2 {
   width: 100%;
   min-height: 6vh;
   display: flex;
   align-items: center;
+  color: brown;
   justify-content: center;
   font-family: "Baskervville SC", serif;
   font-weight: 500;
@@ -129,11 +121,13 @@
   width: 100%;
   min-height: 6vh;
   display: flex;
-  background-color: orangered;
+  background-color: white;
   align-items: center;
   justify-content: center;
   font-size: large;
   gap: 2rem;
+  z-index: 5;
+  padding: 0.5rem;
 }
 @media (max-width: 446px) {
   .section-one .table-3 {
@@ -160,7 +154,29 @@
   min-height: 5vh;
   display: flex;
   padding: 0 1rem;
-  background-color: orangered;
+  margin-top: 200px;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (max-width: 1115px) {
+  .section-one .table-4 {
+    margin-top: 190px;
+  }
+}
+@media (max-width: 700px) {
+  .section-one .table-4 {
+    margin-top: 180px;
+  }
+}
+@media (max-width: 500px) {
+  .section-one .table-4 {
+    margin-top: 170px;
+  }
+}
+@media (max-width: 446px) {
+  .section-one .table-4 {
+    margin-top: 220px;
+  }
 }
 .section-one .table-5 {
   width: 100%;
@@ -168,6 +184,11 @@
   display: flex;
   align-items: center;
   padding: 0 1rem;
+  border-top: 1px solid burlywood;
+  border-right: 1px solid burlywood;
+  border-top-left-radius: 5px;
+  border-left: 1px solid burlywood;
+  border-top-right-radius: 5px;
 }
 @media (max-width: 500px) {
   .section-one .table-5 {
@@ -196,14 +217,29 @@
 }
 .section-one .main-category-container {
   max-width: 84.5rem;
-  min-height: 110vh;
+  min-height: 100vh;
   position: relative;
+}
+@media (max-width: 700px) {
+  .section-one .main-category-container {
+    min-height: 70vh;
+  }
+}
+@media (max-width: 500px) {
+  .section-one .main-category-container {
+    min-height: 100vh;
+  }
+}
+@media (max-width: 400px) {
+  .section-one .main-category-container {
+    min-height: 90vh;
+  }
 }
 .section-one .after-bread-title {
   max-width: 100%;
   min-height: 100%;
   display: flex;
-  background-color: orangered;
+  padding-left: 0.5rem;
   padding: 0.5rem;
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -220,12 +256,89 @@
     overflow-x: scroll;
   }
 }
-.section-one .total-amount {
+.section-one .after-bread-title #bottom-total-table {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom: 1px solid burlywood;
+}
+.section-one .footer {
   width: 100%;
-  min-height: 20vh;
-  background-color: orangered;
+  min-height: 10vh;
+  background-color: black;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.section-one .footer .footer-one {
+  width: 100%;
+  min-height: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+}
+.section-one .footer .footer-two {
+  width: 100%;
+  min-height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 95%;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 85%;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 83%;
+  }
+}
+@media (max-width: 300px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+header {
+  width: 100%;
+  min-height: 20vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: fixed;
+  background-color: white;
+  z-index: 4;
+}
+header .table-1 {
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .table-1 .logo {
+  min-width: 7rem;
+  height: 5.7rem;
+  background-color: green;
+}
+header .table-1 .logo img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -1,16 +1,23 @@
 .section-one{
     max-width: 100%;
-    padding: 1rem 0rem;
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
+    position: relative;
    
+
+  
+
     .table{
         width: 100%;
         min-height: 7vh;
         display: flex;
         align-items: center;
         justify-content: center;
+        border-top: 1px solid burlywood;
+        border-left: 1px solid burlywood;
+        border-right: 1px solid burlywood;
+
         @media (max-width:500px) {
             width: 35rem;
             padding: 0.2rem;
@@ -32,6 +39,7 @@
                 padding: 0.5rem;
                 border-radius: 7px;
                 font-size: 120%;
+                border: 1.6px solid burlywood;
                 @media (max-width:850px) {
                     max-width: 80%;
                     padding: 0.2rem 0.6rem;
@@ -48,16 +56,19 @@
                 width: 20px;
                 height: 20px;
                 background-color: skyblue;
+                border-radius: 50%;
             }
             .yellow-light{
                 width: 20px;
                 height: 20px;
                 background-color: yellow;
+                border-radius: 50%;
             }
             .red-light{
                 width: 20px;
                 height: 20px;
                 background-color: red;
+                border-radius: 50%;
             }
             
             
@@ -77,30 +88,16 @@
         }
         
     }
-    .table-1{
-        width: 100%;
-        min-height: 10vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
+    
 
-    .logo{
-        max-width: 7rem;
-        max-height: 5.7rem;
-        background-color: blue;
-        img{
-            width: 100%;
-            height: 100%;
-        }
-    }
+   
 
     .table-2{
         width: 100%;
         min-height: 6vh;
         display: flex;
         align-items: center;
+        color: brown;
         justify-content: center;
         font-family: "Baskervville SC", serif;
         font-weight: 500;
@@ -126,11 +123,14 @@
         width: 100%;
         min-height: 6vh;
         display: flex;
-        background-color: orangered;
+        background-color: white;
         align-items: center;
         justify-content: center;
         font-size: large;
         gap: 2rem;
+        z-index: 5;
+        padding: 0.5rem;
+       
         @media (max-width:446px) {
             justify-content: flex-start;
             padding-left: 1rem;
@@ -154,7 +154,24 @@
         min-height: 5vh;
         display: flex;
         padding: 0 1rem;
-        background-color: orangered;
+        margin-top: 200px;
+        align-items: center;
+        justify-content: flex-start;
+        @media (max-width:1115px) {
+            margin-top: 190px;
+        }
+        @media (max-width:700px) {
+            margin-top: 180px;
+        }
+        @media (max-width:500px) {
+            margin-top: 170px;
+           
+        }
+        @media (max-width:446px) {
+            margin-top: 220px;
+           
+        }
+       
 
     }
 
@@ -166,6 +183,11 @@
         display: flex;
         align-items: center;
         padding: 0 1rem;
+        border-top: 1px solid burlywood;
+        border-right: 1px solid burlywood;
+        border-top-left-radius: 5px;
+        border-left: 1px solid burlywood;
+        border-top-right-radius: 5px;
         @media (max-width:500px) {
             width: 35rem;
             padding: 0.2rem;
@@ -204,8 +226,18 @@
 
     .main-category-container{
         max-width: 84.5rem;
-        min-height: 110vh;
+        min-height: 100vh;
         position: relative;
+        @media (max-width:700px) {
+            min-height: 70vh;
+        }
+        @media (max-width:500px) {
+            min-height: 100vh;
+        }
+        @media (max-width:400px) {
+            min-height: 90vh;
+        }
+        
         
 
     }
@@ -213,7 +245,7 @@
         max-width: 100%;
         min-height: 100%;
         display: flex;
-        background-color: orangered;
+        padding-left: 0.5rem;
         padding: 0.5rem;
         flex-direction: column;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -235,17 +267,42 @@
       
         
         
-        
+        #bottom-total-table{
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom: 1px solid burlywood ;
+
+        }
       
     }
 
-    .total-amount{
+    .footer{
         width: 100%;
-        min-height: 20vh;
-        background-color: orangered;
+        min-height: 10vh;
+        background-color: black;
         display: flex;
+        color: white;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         padding: 1rem;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .footer-one{
+            width: 100%;
+            min-height: 5vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer-two{
+            width: 100%;
+            min-height: 5vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+
     }
 }
