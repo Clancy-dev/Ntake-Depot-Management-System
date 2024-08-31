@@ -53,7 +53,7 @@ function calculateDifference() {
 
         // Check if the difference is negative
         if (difference < 0) {
-            alert("Input 2 cannot be greater than Input 1. Please enter valid numbers.");
+            alert("Quantity at the end of the day cannot be greater than Quantity at the beginning of the day. Unless if you Restocked. Declare it accordingly");
             input2.value = ''; // Clear Input 2
             result.textContent = 0;
             price.textContent = 0;
