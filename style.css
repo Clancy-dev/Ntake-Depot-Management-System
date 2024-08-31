@@ -232,7 +232,7 @@
 }
 @media (max-width: 400px) {
   .section-one .main-category-container {
-    min-height: 90vh;
+    min-height: 100vh;
   }
 }
 .section-one .after-bread-title {
